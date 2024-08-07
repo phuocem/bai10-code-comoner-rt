@@ -1,0 +1,56 @@
+/* Parent container to center content */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Styles for the outer blue container */
+.farme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  width: 100%; /* Adjust width as needed */
+  border-radius: 8px; /* Optional: rounded corners */ /* Padding inside the container */
+}
+
+/* Styles for the container of total amount and button */
+.checkout-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the total amount paragraph */
+.total-amount {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff; /* White text on blue background */
+  margin-bottom: 10px;
+}
+
+/* Styles for the checkout button */
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #28a745; /* Green color for the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+button:active {
+  background-color: #1e7e34; /* Even darker green on active */
+}

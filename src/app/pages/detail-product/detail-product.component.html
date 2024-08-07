@@ -1,0 +1,16 @@
+<div class="f">
+  <div class="product-detail">
+    <div class="product-image">
+      <img src="{{ detailProduct?.imageUrl }}" alt="Product Image" />
+    </div>
+    <div class="product-info">
+      <h1>{{ detailProduct?.name }}</h1>
+      <p class="quantity">inventory: {{ detailProduct?.inStock }}</p>
+      <p class="description">{{ detailProduct?.description }}</p>
+      <p class="price">{{ detailProduct?.price }} VND</p>
+      <button (click)="this.storeService.addtocart(detailProduct)">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>

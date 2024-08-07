@@ -1,0 +1,13 @@
+<h1 style="display: flex; justify-content: center">Your cart</h1>
+
+<div class="farme">
+  @if (this.storeService.cart.length > 0) {
+    <div class="checkout-content">
+      <p class="total-amount">Tổng tiền {{ this.storeService.totalAmount }}</p>
+      <button (click)="storeService.checkout()">Thanh toán</button>
+    </div>
+  }
+</div>
+@for (product of this.storeService.cart; track $index) {
+  <app-cart-card [cart]="product"></app-cart-card>
+}

@@ -1,0 +1,51 @@
+/* Style for the container of the navbar */
+.navbar {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+/* Style for the image (profile picture) */
+.navbar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+/* Style for buttons */
+.navbar button {
+  background-color: #555;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Hover effect for buttons */
+.navbar button:hover {
+  background-color: #777;
+}
+
+/* Optional: focus style for accessibility */
+.navbar button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.singin {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Đẩy phần đăng nhập về bên phải */
+}
+
+.singin p {
+  margin: 0;
+  padding-right: 20px; /* Thêm khoảng cách giữa tên người dùng và nút Logout */
+}

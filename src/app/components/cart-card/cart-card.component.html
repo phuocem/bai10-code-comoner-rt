@@ -1,0 +1,7 @@
+<div class="cart-container">
+  <img src="{{ cart.imageUrl }}" />
+  <p>{{ cart.name }}</p>
+  <p>{{ cart.inStock }}</p>
+  <p>{{ cart.price }}</p>
+  <button (click)="storeService.removeFromCart(cart)">Xóa</button>
+</div>

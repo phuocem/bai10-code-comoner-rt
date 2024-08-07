@@ -1,0 +1,24 @@
+<div class="navbar">
+  <button [routerLink]="['/home']">HOME</button>
+  <button [routerLink]="['/products']">PRODUCT</button>
+  <button [routerLink]="['/cart']">CART</button>
+  <div class="singin">
+    <!-- Hiển thị ảnh đại diện nếu người dùng đã đăng nhập -->
+    <div>
+      @if (authService.currentUser) {
+        <img [src]="authService.currentUser.photoURL" alt="Profile Picture" />
+      }
+    </div>
+    <!-- Hiển thị nút Sign In nếu người dùng chưa đăng nhập -->
+    <div>
+      @if (!authService.isLoggedIn) {
+        <button (click)="authService.login()">SIGN IN</button>
+      }
+    </div>
+    <!-- Hiển thị tên người dùng và nút Logout nếu người dùng đã đăng nhập -->
+    @if (authService.isLoggedIn) {
+      <p>{{ authService.currentUser?.displayName }}!</p>
+      <button (click)="authService.logout()">Logout</button>
+    }
+  </div>
+</div>
