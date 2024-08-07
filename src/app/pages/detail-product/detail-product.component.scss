@@ -1,4 +1,3 @@
-/* Container for the product details */
 .f {
   height: 100%;
   width: 100%;
@@ -10,7 +9,6 @@
 .product-detail {
   display: flex;
   flex-wrap: wrap;
-
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -18,7 +16,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for the product image */
 .product-image {
   flex: 1;
   max-width: 40%;
@@ -31,7 +28,6 @@
   border-radius: 8px;
 }
 
-/* Styling for the product info */
 .product-info {
   flex: 1;
   max-width: 50%;
@@ -62,7 +58,6 @@
   margin-bottom: 20px;
 }
 
-/* Styling for the button */
 .product-info button {
   background-color: #007bff;
   border: none;
